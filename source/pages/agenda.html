@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大会议程</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        table {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        #header-menu {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="header-title">
+                <div class="btn" onclick="backToMain()"><span class="icon iconfont icon-home"></span>首页</div>
+                <div>></div>
+                <div>大会议程</div>
+            </div>
+            <div id="header-menu" class="btn" onclick="showMenu()"><span class="icon iconfont icon-menu"></span></div>
+        </header>
+
+        <ul id="menu">
+            <li class="btn">欢迎辞</li>
+            <li class="btn">基本信息</li>
+            <li class="menu-active">组织结构</li>
+            <li class="btn">大会议程</li>
+            <li class="btn">照片直播</li>
+            <li class="btn">会场交通</li>
+            <li class="btn">会议通知下载</li>
+            <li class="btn">联系我们</li>
+        </ul>
+        <div id="mask"></div>
+
+        <div id="content">
+            <header>大会议程</header>
+            <h3>大会报告</h3>
+            <table border="0">
+                <tr>
+                    <th colspan="3">2024年10月11日全天 周五</th>
+                </tr>
+                <tr>
+                    <td>09:00-21:00</td>
+                    <td colspan="2">会议报到（南京白金汉爵大酒店大堂）</td>
+                </tr>
+                <tr>
+                    <td>20:00-21:00</td>
+                    <td colspan="2">世界中联网络药理学专委会第二届理事会会议</td>
+                </tr>
+                <tr>
+                    <th colspan="3">2024年10月12日全天 周六</th>
+                </tr>
+                <tr>
+                    <th>时间</th>
+                    <th>开幕式、领导致辞及成果发布会</th>
+                    <th>主持人</th>
+                </tr>
+                <tr>
+                    <td>08:15-09:15</td>
+                    <td>
+                        <p>世界中医药学会联合会领导致开幕辞</p>
+                        <p>南京中医药大学领导致欢迎词</p>
+                        <p>田金洲院士致辞</p>
+                        <p>世界中医药学会联合会网络药理学专委会会长致辞</p>
+                        <p>网络药理学共识意见发布会</p>
+                        <p>网络药理学赋能中医药研发成果发布会</p>
+                    </td>
+                    <td>
+                        <p><b>许海玉</b></p>
+                        <p>中国中医科学院中药研究所</p>
+                    </td>
+                </tr>
+                <tr><td>09:15-9:30</td><td>合影</td><td></td></tr>
+                <tr><th></th><th>报告专家及报告题目</th><th></th></tr>
+                <tr>
+                    <td>09:30-10:00</td>
+                    <td>
+                        <p><b>陈凯先</b> 中国科学院上海药物研究所 中国科学院院士</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                    <td rowspan="5">
+                        <p><b>曹鹏</b></p>
+                        <p>南京中医药大学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:00-10:30</td>
+                    <td>
+                        <p><b>肖  伟</b> 江苏康缘药业股份有限公司 中国工程院院士</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:30-11:00</td>
+                    <td>
+                        <p><b>高  月</b> 军事医学科学院放射与辐射医学研究所</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:00-11:30</td>
+                    <td>
+                        <p><b>杜冠华</b> 中国医学科学院北京协和医学院药物研究所</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:30-12:00</td>
+                    <td>
+                        <p><b>李  梢</b> 清华大学北京市中医药交叉研究所</p>
+                        <p>报告题目：数据与AI驱动的中医药网络药理学研究</p>
+                    </td>
+                </tr>
+                <tr><td>12:00-13:30</td><td>午餐</td><td></td></tr>
+                <tr>
+                    <td>13:30-14:00</td>
+                    <td>
+                        <p><b>肖小河</b> 解放军总医院第五医学中心全军中医药研究所</p>
+                        <p>报告题目：中药安全性与精准用药</p>
+                    </td>
+                    <td rowspan="3">
+                        <p><b>段金廒</b></p>
+                        <p>南京中医药大学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14:30-15:00</td>
+                    <td>
+                        <p><b>孙晓波</b> 中国医学科学院药用植物研究所</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15:00-15:30</td>
+                    <td>
+                        <p><b>张卫东</b> 海军军医大学现代中药研究中心</p>
+                        <p>报告题目：人工智能驱动的中药复方研究的思考</p>
+                    </td>
+                </tr>
+                <tr><td>15:30-15:40</td><td>茶歇</td><td></td></tr>
+                <tr>
+                    <td>15:40-16:10</td>
+                    <td>
+                        <p><b>许  钒</b> 安徽中医药大学</p>
+                        <p>报告题目：中西结合、学科交叉的中药复方研究思考与实践</p>
+                    </td>
+                    <td rowspan="3">
+                        <p><b>李学军</b></p>
+                        <p>北京大学医学部</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:10-16:40</td>
+                    <td>
+                        <p><b>周文霞</b> 军事科学院军事医学研究院</p>
+                        <p>报告题目：人工智能驱动的疾病共性通路发现和中药活性成分筛选</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:40-17:10</td>
+                    <td>
+                        <p><b>白  钢</b> 南开大学</p>
+                        <p>报告题目：基于中医理论探究中药临床优势解析其调控机制</p>
+                    </td>
+                </tr>
+                <tr><td>17:30</td><td>晚宴</td><td></td></tr>
+            </table>
+            <h3>分论坛一：中国医疗保健国际交流促进会中药学分会华夏中药创新与新质生产力学术交流会</h3>
+            <table border="0">
+                <tr>
+                    <th colspan="3">2024年10月12日下午 周六</th>
+                </tr>
+                <tr>
+                    <th>时间</th>
+                    <th>报告专家及报告题目</th>
+                    <th>主持人</th>
+                </tr>
+                <tr>
+                    <td>13:30-13:45</td>
+                    <td>会议背景介绍 肖诗鹰</td>
+                    <td rowspan="8">
+                        <p><b>肖诗鹰</b></p>
+                        <p>中国医疗保健国际交流促进会中药学分会</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13:45-14:15</td>
+                    <td>
+                        <p><b>吕爱平 </b>香港浸会大学</p>
+                        <p>报告题目：数据科学与中医药科学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14:15-14:45</td>
+                    <td>
+                        <p><b>孔令义  </b>中国药科大学</p>
+                        <p>报告题目：若干天然产物及其作用靶点研究</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14:45-15:15</td>
+                    <td>
+                        <p><b>庾石山  </b>中国医学科学院药物研究所</p>
+                        <p>报告题目：濒危动物药材的药效物质研究新模式与高技术替代品创制</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15:15-15:30</td>
+                    <td><p>茶歇</p></td>
+                </tr>
+                <tr>
+                    <td>15:30-16:00</td>
+                    <td>
+                        <p><b>苗明三  </b>河南中医药大学</p>
+                        <p>报告题目：中医药新质生产力—中药吸嗅学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:00-16:30</td>
+                    <td>
+                        <p><b>果德安 </b>中国科学院上海药物研究所</p>
+                        <p>报告题目：中药质控策略与实践</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:30-17:00</td>
+                    <td>
+                        <p><b>余伯阳  </b>中国药科大学</p>
+                        <p>报告题目：多学科交叉融合助力中药新质生产力发展</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>分论坛二：国际前沿论坛（线上）</h3>
+            <table border="0">
+                <tr><th colspan="3">2024年10月12日下午 周六</th></tr>
+                <tr>
+                    <th>
+                        <p>时间</p>
+                        <p>(Beijing time UTC+8)</p>
+                    </th>
+                    <th>报告专家及报告题目</th>
+                    <th>主持专家</th>
+                </tr>
+                <tr>
+                    <td>13:00-13:30</td>
+                    <td>
+                        <p><b>Liang Zhao </b>University of California, San Francisco</p>
+                        <p>Presentation Title: AI guided drug development</p>
+                    </td>
+                    <td rowspan="4">
+                        <p><b>Yuanjia Hu</b></p>
+                        <p>University of Macau</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13:30-14:00</td>
+                    <td>
+                        <p><b>Jing Tang </b>University of Helsinki</p>
+                        <p>Presentation Title: A systematic assessment and integration of Traditional Chinese Medicine databases as a source for drug discovery</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14:00-14:30</td>
+                    <td>
+                        <p><b>Yibin Feng </b>University of Hong Kong</p>
+                        <p>Presentation Title: Chinese medicine research driven by virtual data and AI</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13:30-14:00</td>
+                    <td>
+                        <p><b>Daiyan Zhang </b>University of Southern Denmark</p>
+                        <p>Presentation Title: Predicting the targets of traditional Chinese medicine by large-scale data: A comparative analysis of multiple machine learning models</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15:00-15:20</td>
+                    <td><p><b>Tea Break</b></p></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:20-15:50</td>
+                    <td>
+                        <p><b>Jiangang Shen </b>University of Hong Kong</p>
+                        <p>Presentation Title: Big Data and Multiple Omics Technology for Developing Precise Therapeutic Strategies of Classical Chinese Medicinal Formulas Targeting Post-Stroke Neuroprotection and Neurogenesis</p>
+                    </td>
+                    <td rowspan="4">
+                        <p><b>Haixiang Yu</b></p>
+                        <p>Duke University Medical School</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>15:50-16:20</td>
+                    <td>
+                        <p><b>Lidan Zhong </b>Nanyang Technological University</p>
+                        <p>Presentation Title: How to establish the international platform for clinical research</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:20-16:50</td>
+                    <td>
+                        <p><b>Yonghong Peng </b>Anglia Ruskin University Cambridge</p>
+                        <p>Presentation Title: AI in Medicine and Health: What is the AI opportunity to transform the future healthcare</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16:50-17:20</td>
+                    <td>
+                        <p><b>Angela Yang </b>RMIT University</p>
+                        <p>Presentation Title: Undetermined</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>分论坛三：学术发展论坛</h3>
+            <table border="0">
+                <tr>
+                    <th colspan="3">2024年10月13日上午 周日 </th>
+                </tr>
+                <tr>
+                    <th>时间</th>
+                    <th>报告专家及报告题目</th>
+                    <th>主持人</th>
+                </tr>
+                <tr>
+                    <td>08:30-8:50</td>
+                    <td>
+                        <p><b>杨洪军  </b>中国中医科学院</p>
+                        <p>报告题目：中药方剂复杂作用解析</p>
+                    </td>
+                    <td rowspan="5">
+                        <p><b>麻彤辉</b></p>
+                        <p>南京中医药大学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08:50-9:10</td>
+                    <td>
+                        <p><b>范骁辉  </b>浙江大学</p>
+                        <p>报告题目：单细胞数据科学——技术与趋势</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:10-9:30</td>
+                    <td>
+                        <p><b>曾克武  </b>北京大学</p>
+                        <p>报告题目：中药成分作用靶点发现及化学生物学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:30-09:50</td>
+                    <td>
+                        <p><b>项耀祖  </b>同济大学</p>
+                        <p>报告题目：中西医结合防治冠心病</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:50-10:10</td>
+                    <td>
+                        <p><b>杨  华  </b>中国药科大学</p>
+                        <p>报告题目：数据驱动的中药成分结构-功能-靶标研究</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:10-10:20</td>
+                    <td><p><b>茶歇</b></p></td>
+                </tr>
+                <tr>
+                    <td>10:20-10:40</td>
+                    <td>
+                        <p><b>周雪忠  </b>北京交通大学</p>
+                        <p>报告题目：基于人工智能的真实世界中医临床大数据与网络医学交叉融合研究</p>
+                    </td>
+                    <td rowspan="5">
+                        <p><b>范骁辉</b></p>
+                        <p>浙江大学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:40-11:00</td>
+                    <td>
+                        <p><b>韩  波  </b>成都中医药大学</p>
+                        <p>报告题目：临床价值导向的创新中药药效物质研究</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:00-11:20</td>
+                    <td>
+                        <p><b>孙  洋  </b>南京大学</p>
+                        <p>报告题目：中药活性成分机制研究的新策略——当靶标确证遇上单细胞多组学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:20-11:40</td>
+                    <td>
+                        <p><b>林  生  </b>北京中医药大学东直门医院</p>
+                        <p>报告题目：临床有效上市单味中药制剂药效物质及作用机制研究</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:40-12:00</td>
+                    <td>
+                        <p><b>潘胡丹  </b>广东省中医院</p>
+                        <p>报告题目：基于糖基化修饰探讨风湿病诊疗新策略及中药复方干预原理</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>分论坛四：新药研发与临床应用论坛</h3>
+            <table border="0">
+                <tr>
+                    <th colspan="3">2024年10月13日上午 周日</th>
+                </tr>
+                <tr>
+                    <th>时间</th>
+                    <th>报告专家及报告题目</th>
+                    <th>主持人</th>
+                </tr>
+                <tr>
+                    <td>08:30-8:50</td>
+                    <td>
+                        <p><b>孙  蓉  </b>山东大学</p>
+                        <p>报告题目：网药助力中药提质增效研究与实践</p>
+                    </td>
+                    <td rowspan="5">
+                        <p><b>胡元佳</b></p>
+                        <p>澳门大学</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>08:50-9:10</td>
+                    <td>
+                        <p><b>王  忠  </b>中国中医科学院中医临床基础医学研究所</p>
+                        <p>报告题目：方剂组学的研究进展与中药新药研发新模式</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:10-9:30</td>
+                    <td>
+                        <p><b>王  勇  </b>北京中医药大学东直门医院</p>
+                        <p>报告题目：待定</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:30-09:50</td>
+                    <td>
+                        <p><b>徐世军  </b>成都中医药大学</p>
+                        <p>报告题目：网络药理驱动的中药疗效机制评价</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>09:50-10:10</td>
+                    <td>
+                        <p><b>许海玉  </b>中国中医科学院中药研究所</p>
+                        <p>报告题目：中药整合药理学的方法及应用</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:10-10:20</td>
+                    <td><p><b>茶歇</b></p></td>
+                </tr>
+                <tr>
+                    <td>10:20-10:40</td>
+                    <td>
+                        <p><b>刘  玥  </b>中国中医科学院西苑医院</p>
+                        <p>报告题目：中医原创思维与心血管疾病防治</p>
+                    </td>
+                    <td rowspan="5">
+                        <p><b>王  忠</b></p>
+                        <p>中国中医科学院中医临床基础医学研究所</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10:40-11:00</td>
+                    <td>
+                        <p><b>胡元佳  </b>澳门大学中华医药研究院</p>
+                        <p>报告题目：基于网络药理学和机器学习的心血管疾病靶点发现</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:00-11:20</td>
+                    <td>
+                        <p><b>封继宏  </b>天津中医药大学第二附属医院</p>
+                        <p>报告题目：“三结合”审评证据体系下呼吸病中药新药研发思路初探</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:20-11:40</td>
+                    <td>
+                        <p><b>刘爱峰  </b>天津中医药大学第一附属医院</p>
+                        <p>报告题目：基于TRPV4/p38 MAPK/CREB通路探讨复方伤痛胶囊治疗大鼠神经病理性疼痛外周敏化的机制</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11:40-12:00</td>
+                    <td>
+                        <p><b>马仁强  </b>博济医药科技股份有限公司</p>
+                        <p>报告题目：结合中药药性与功能主治开展中药非临床评价的思考</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="line"></div>
+    </div>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>

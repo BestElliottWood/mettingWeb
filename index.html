@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./source/css/main.css">
+    <link rel="stylesheet" href="./source/css/iconfont.css">
+    <style>
+        #main {
+            background-color: #9fcbe8;
+        }
+        #btn-lists {
+            margin-left: 20px;
+        }
+        .btn:nth-child(2n) {
+            margin-left: 20px;
+        }
+        .btn {
+            position: relative;
+            display: inline-block;
+            width: calc(50% - 20px);
+            height: 0;
+            margin-top: 20px;
+            padding-bottom: 18%;
+            color: white;
+            font-size: 2.5em;
+            font-weight: 500;
+            border-radius: 16px;
+            background-color: #1ea9be;
+            box-shadow: rgba(96, 98, 100, 0.15) 0 10px 10px;
+        }
+        .btn-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+        .icon {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.5em;
+            width: 30%;
+            text-align: center;
+        }
+        .btn-txt {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="./source/images/main.jpg" alt="" width="100%">
+        <div id="btn-lists">
+            <div class="btn" data-tag="welcome"><div class="btn-content"><span class="icon iconfont icon-welcome"></span><span class="btn-txt">欢迎辞</span></div></div>
+            <div class="btn" data-tag="baseInfo"><div class="btn-content"><span class="icon iconfont icon-baseInfo"></span><span class="btn-txt">基本信息</span></div></div>
+            <div class="btn" data-tag="organization"><div class="btn-content"><span class="icon iconfont icon-organization"></span><span class="btn-txt">组织结构</span></div></div>
+            <div class="btn" data-tag="agenda"><div class="btn-content"><span class="icon iconfont icon-schedule"></span><span class="btn-txt">大会议程</span></div></div>
+            <div class="btn" data-tag="pictureLive"><div class="btn-content"><span class="icon iconfont icon-live"></span><span class="btn-txt">照片直播</span></div></div>
+            <div class="btn" data-tag="traffic"><div class="btn-content"><span class="icon iconfont icon-traffic"></span><span class="btn-txt">会场交通</span></div></div>
+            <div class="btn" data-tag="download"><div class="btn-content"><span class="icon iconfont icon-download"></span><span class="btn-txt">会议通知下载</span></div></div>
+            <div class="btn" data-tag="contact"><div class="btn-content"><span class="icon iconfont icon-contact"></span><span class="btn-txt">联系我们</span></div></div>
+        </div>
+    </div>
+
+    <script>
+        let btns = document.getElementsByClassName('btn');
+        for(let btn of btns) {
+            btn.addEventListener('click', () => {
+                let menus = ['pictureLive', 'traffic', 'download']
+                if (!menus.includes(btn.dataset.tag)) {
+                    location.href = `./source/pages/${btn.dataset.tag}.html`;
+                }
+                if (btn.dataset.tag === 'download') {
+                    let link = document.createElement('a');
+                    link.href = './source/notice.docx';
+                    link.download = '第二届国际网络药理学大会会议通知(第三轮通知)-2401003';
+                    link.target = '_blank';
+                    link.click();
+                }
+            })
+        }
+    </script>
+</body>
+</html>

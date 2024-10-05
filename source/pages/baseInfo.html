@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        #header-menu {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <div id="header-title">
+                <div class="btn" onclick="backToMain()"><span class="icon iconfont icon-home"></span>首页</div>
+                <div>></div>
+                <div>基本信息</div>
+            </div>
+            <div id="header-menu" class="btn" onclick="showMenu()"><span class="icon iconfont icon-menu"></span></div>
+        </header>
+
+        <ul id="menu">
+            <li class="btn">欢迎辞</li>
+            <li class="menu-active">基本信息</li>
+            <li class="btn">组织结构</li>
+            <li class="btn">大会议程</li>
+            <li class="btn">照片直播</li>
+            <li class="btn">会场交通</li>
+            <li class="btn">会议通知下载</li>
+            <li class="btn">联系我们</li>
+        </ul>
+        <div id="mask"></div>
+
+        <div id="content">
+            <header>基本信息</header>
+            <p>会议时间：</p>
+            <p><b>会议地点：</b>江苏南京市-白金汉爵大酒店</p>
+            <p><b>会议主题：</b>聚焦人工智能新质生产力 推动医药产业高质量发展</p>
+            <p><b>报到时间：</b>10月11日（周五）09:00-21:00</p>
+            <p><b>报到地点：</b>南京白金汉爵大酒店大堂</p>
+            <p><b>会议收费：</b>正式代表10月1日前1200元/人，10月1日后1600元/人；学生代表10月1日前1200元/人，10月1日后1600元/人。（会议往返交通费、住宿费由参会代表自理）</p>
+            <p><b>住宿费：</b>南京白金汉爵大酒店住宿协议价格：380元（大床房）/468元（标准间）</p>
+        </div>
+        <div id="line"></div>
+    </div>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>
